@@ -90,3 +90,36 @@ function askGPT(prompt) {
     return `Error: ${e.message}`;
   }
 }
+
+/**
+ * Function to generate content from GPT model
+ * Hàm để tạo nội dung từ mô hình GPT
+ * @param {string} prompt - The prompt to send to the GPT model
+ * @param {SpreadsheetApp.Range} range - The range to write the response to
+ */
+function generateContent(prompt, range) {
+  // Get the response from the GPT model
+  // Lấy phản hồi từ mô hình GPT
+  const response = askGPT(prompt);
+
+  // Check if the response is an error message
+  // Kiểm tra nếu phản hồi là thông báo lỗi
+  if (response.startsWith('Error:')) {
+    // Display the error message to the user
+    // Hiển thị thông báo lỗi cho người dùng
+    Browser.msgBox(response);
+    return;
+  }
+
+  // Write the response to the specified range
+  // Ghi phản hồi vào phạm vi đã chỉ định
+  range.setValue(response);
+
+  // Automatically adjust column width to fit the content
+  // Tự động điều chỉnh độ rộng cột cho phù hợp với nội dung
+  range.autoResizeColumn();
+
+  // Set the font of the cell to the default font of the sheet
+  // Đặt font của ô thành font mặc định của sheet
+  range.setFontFamily(range.getSheet().getRange('A1').getFontFamily());
+}
