@@ -56,9 +56,5 @@ Gõ dòng lệnh kích hoạt Gemini
 Gõ dòng lệnh kích hoạt Gemini
 Bước 7: Sau đó nhấn Enter để hiển thị câu trả lời
 
-Cách tích hợp Gemini vào Google Sheets
-Cách tích hợp Gemini vào Google Sheets
-Xem thêm: Cách đăng ký Gemini Advanced và nhận 2TB Google Drive miễn phí
-
 Lời Kết
 Vậy là bạn đã hoàn tất quá trình tích hợp Gemini vào Google Sheets. Gemini không chỉ giúp bạn tiết kiệm thời gian và công sức, mà còn giúp bạn làm việc hiệu quả hơn với dữ liệu. Hãy bắt đầu khám phá và trải nghiệm Gemini ngay hôm nay, để tận hưởng những lợi ích mà công cụ này mang lại nha.
